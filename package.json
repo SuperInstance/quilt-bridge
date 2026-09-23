@@ -1,0 +1,16 @@
+{
+  "name": "@superinstance/quilt-bridge",
+  "version": "0.1.0",
+  "description": "Canon crosses substrate languages",
+  "main": "quilt_bridge/core.js",
+  "scripts": {
+    "test": "node tests/test_bridge.js"
+  },
+  "keywords": ["quilt", "polyformalism", "canon", "bridge", "substrate"],
+  "license": "MIT",
+  "author": "Casey <casey@SuperInstance>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SuperInstance/quilt-bridge.git"
+  }
+}
