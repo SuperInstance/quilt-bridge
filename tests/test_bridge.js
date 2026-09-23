@@ -5,9 +5,11 @@ function assert(cond, msg) {
 }
 
 // Test loreToDict
-const d = loreToDict("Line 1\nLine 2");
-assert(d.lore_lines === 2, "lore_lines");
-assert(d.lore_chars === 12, "lore_chars");
+const lore = "Line 1\nLine 2";
+const d = loreToDict(lore);
+assert(d.lore_lines === 2, `lore_lines (got ${d.lore_lines})`);
+assert(d.lore_chars === lore.length, `lore_chars (expected ${lore.length} got ${d.lore_chars})`);
+assert(d.word_count === 4, `word_count (got ${d.word_count})`);
 
 // Test SQL escape
 const sql = loreToSql("It's a 'test'", 1);
@@ -29,3 +31,6 @@ assert(typeof all.rust === 'string', "rust");
 assert(typeof all.typescript === 'string', "typescript");
 
 console.log("✓ All 5 JS bridge tests pass");
+console.log("  lore_chars:", d.lore_chars, "(expected", lore.length, ")");
+console.log("  lore_lines:", d.lore_lines, "(expected 2)");
+console.log("  word_count:", d.word_count, "(expected 4)");
