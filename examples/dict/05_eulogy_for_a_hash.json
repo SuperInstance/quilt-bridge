@@ -1,0 +1,8 @@
+{
+  "lore_chars": 3587,
+  "lore_lines": 103,
+  "lore_first_line": "When Casey wrote it into the canon-contract,",
+  "first_80": "When Casey wrote it into the canon-contract,\nit was a test.\nNot a language test.",
+  "first_200": "When Casey wrote it into the canon-contract,\nit was a test.\nNot a language test. A *portability* test.\nA way of asking: if this string moves across the substrate,\nwill the substrate still recognize it",
+  "word_count": 620
+}
